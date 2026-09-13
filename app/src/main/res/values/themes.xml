@@ -1,0 +1,11 @@
+<resources>
+    <style name="Theme.SIEAPrayerDisplay" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:colorAccent">#D8AC4A</item>
+        <item name="android:navigationBarColor">#061D2E</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>
+

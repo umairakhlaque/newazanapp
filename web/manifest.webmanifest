@@ -1,0 +1,19 @@
+{
+  "name": "SIEA Prayer Display",
+  "short_name": "SIEA Prayer",
+  "description": "Live Adhan and Iqamah display for SIEA",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#061d2e",
+  "theme_color": "#061d2e",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

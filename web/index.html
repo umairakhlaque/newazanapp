@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SIEA Prayer Display</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="display" class="display-shell">
+    <header class="brand">
+      <h1>SIEA</h1>
+      <p>PRAYER &amp; IQAMAH TIMES</p>
+    </header>
+
+    <section id="main-screen" class="screen active">
+      <div class="clock-panel">
+        <div class="analog-clock" aria-label="Analogue clock">
+          <div class="clock-markers" id="clock-markers"></div>
+          <div class="hand hour" id="hour-hand"></div>
+          <div class="hand minute" id="minute-hand"></div>
+          <div class="hand second" id="second-hand"></div>
+          <div class="clock-pin"></div>
+        </div>
+        <div id="digital-clock" class="digital-clock">--:--</div>
+        <div id="current-date" class="current-date"></div>
+      </div>
+
+      <div class="prayer-panel">
+        <div class="table-head"><span>PRAYER</span><span>ADHAN</span><span>IQAMAH</span></div>
+        <div id="prayer-rows"></div>
+      </div>
+    </section>
+
+    <section id="adhan-screen" class="screen overlay-screen">
+      <div class="arch-card">
+        <h2 id="adhan-prayer">ASR</h2>
+        <h3>ADHAN TIME</h3>
+        <div id="adhan-time" class="hero-time">17:00</div>
+      </div>
+      <p class="quiet-copy">The main prayer timetable will return shortly</p>
+    </section>
+
+    <section id="iqamah-screen" class="screen overlay-screen">
+      <div class="countdown-block">
+        <h2 id="iqamah-prayer">ASR IQAMAH</h2>
+        <div class="countdown-ring"><span id="countdown">01:42</span></div>
+        <p>MINUTES REMAINING</p>
+      </div>
+      <div class="mobile-reminder">
+        <div class="phone-icon"><span>🔕</span></div>
+        <h3>PLEASE SILENCE<br>YOUR MOBILE PHONE</h3>
+      </div>
+    </section>
+
+    <section id="content-screen" class="screen overlay-screen content-screen">
+      <h2 id="content-title">AYAH OF THE DAY</h2>
+      <div id="content-arabic" class="arabic"></div>
+      <div id="content-english" class="translation"></div>
+      <div id="content-reference" class="reference"></div>
+    </section>
+  </main>
+
+  <nav class="test-controls" aria-label="Screen preview controls">
+    <strong>TEST SCREENS</strong>
+    <button data-screen="main">Main</button>
+    <button data-screen="adhan">Adhan</button>
+    <button data-screen="iqamah">Iqamah</button>
+    <button data-screen="quran">Ayah</button>
+    <button data-screen="hadith">Hadith</button>
+    <a href="admin.html">Admin</a>
+  </nav>
+  <script src="app.js"></script>
+</body>
+</html>
+

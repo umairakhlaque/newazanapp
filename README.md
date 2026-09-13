@@ -2,6 +2,10 @@
 
 Offline-first Android TV prayer and Iqamah display for SIEA.
 
+## Online simulator and administration
+
+GitHub Pages publishes a browser simulator from `web/`. It includes instant controls for the Main, Adhan, Iqamah, Ayah, and Hadith screens. The `/admin.html` page validates an official timetable CSV locally, previews up to 31 days, and then sends the administrator to GitHub to publish the approved `timetable.csv`. GitHub remains the authenticated publishing and audit layer; no access token is stored in the browser.
+
 ## What the MVP does
 
 - Permanent SIEA screen with an analogue clock and five prayer rows.
@@ -64,4 +68,3 @@ The application keeps the screen awake, runs in immersive landscape mode, and ad
 ## Current data status
 
 The included September–October 2026 timetable is demonstration data only. Replace it with the official SIEA timetable before using the screen in the mosque.
-

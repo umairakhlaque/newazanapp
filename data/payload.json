@@ -1,5 +1,5 @@
 {
-  "version": "20260914093653",
+  "version": "20260914165835",
   "mosque_name": "SIEA",
   "timezone": "Europe/London",
   "prayer_days": [
@@ -696,33 +696,903 @@
   ],
   "content": [
     {
-      "id": "quran-001",
-      "date": "*",
+      "id": "quran-20260901",
+      "date": "2026-09-01",
       "type": "QURAN",
-      "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا اسْتَعِينُوا بِالصَّبْرِ وَالصَّلَاةِ ۚ إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
-      "english": "Believers, seek help through patience and prayer. Surely Allah is with those who remain patient.",
-      "reference": "Surah Al-Baqarah 2:153",
+      "arabic": "يُسَبِّحُ لِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+      "english": "Everything in the heavens and earth glorifies Allah. The kingdom and all praise belong to Him, and He has power over everything.",
+      "reference": "At-Taghabun 64:1",
       "scholar": "",
-      "detail": ""
+      "detail": "Source: T. Usmani translation on Quran.com; English"
     },
     {
-      "id": "hadith-001",
-      "date": "*",
+      "id": "hadith-20260901",
+      "date": "2026-09-01",
       "type": "HADITH",
-      "arabic": "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ",
-      "english": "Actions are judged by intentions.",
-      "reference": "Riyad as-Salihin Hadith 1",
+      "arabic": "إِنَّمَا الْأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى",
+      "english": "Actions are judged by intentions, and each person receives according to what they intended.",
+      "reference": "Riyad as-Salihin",
       "scholar": "",
       "detail": ""
     },
     {
-      "id": "wisdom-001",
-      "date": "*",
+      "id": "scholar-20260901",
+      "date": "2026-09-01",
       "type": "SCHOLAR",
-      "arabic": "كُلُّ أَحَدٍ يُؤْخَذُ مِنْ قَوْلِهِ وَيُرَدُّ إِلَّا صَاحِبَ هَذَا الْقَبْرِ",
-      "english": "Everyone’s statement may be accepted or rejected except the occupant of this grave.",
-      "reference": "Jami Bayan al-Ilm",
-      "scholar": "Imam Malik",
+      "arabic": "لَا يُؤْخَذُ عَلَى الْأَذَانِ رِزْقٌ",
+      "english": "No fixed payment should be taken for giving the adhan.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260902",
+      "date": "2026-09-02",
+      "type": "QURAN",
+      "arabic": "هُوَ الَّذِي خَلَقَكُمْ فَمِنْكُمْ كَافِرٌ وَمِنْكُمْ مُؤْمِنٌ وَاللَّهُ بِمَا تَعْمَلُونَ بَصِيرٌ",
+      "english": "He created you; among you are those who disbelieve and those who believe. Allah fully sees what you do.",
+      "reference": "At-Taghabun 64:2",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260902",
+      "date": "2026-09-02",
+      "type": "HADITH",
+      "arabic": "وَاللَّهِ إِنِّي لَأَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ فِي الْيَوْمِ أَكْثَرَ مِنْ سَبْعِينَ مَرَّةً",
+      "english": "By Allah, I seek Allah’s forgiveness and repent to Him more than seventy times each day.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260902",
+      "date": "2026-09-02",
+      "type": "SCHOLAR",
+      "arabic": "كَانَ يَكْرَهُ أَنْ يُتَّخَذَ الْجُعْلُ فِي الْأَذَانِ إِلَّا أَنْ يُعْطَى شَيْئًا بِغَيْرِ شَرْطٍ",
+      "english": "He disliked taking a stipulated wage for the adhan, unless something was given without prior condition.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260903",
+      "date": "2026-09-03",
+      "type": "QURAN",
+      "arabic": "خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ بِالْحَقِّ وَصَوَّرَكُمْ فَأَحْسَنَ صُوَرَكُمْ وَإِلَيْهِ الْمَصِيرُ",
+      "english": "He created the heavens and earth with truth, fashioned you well, and to Him is the final return.",
+      "reference": "At-Taghabun 64:3",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260903",
+      "date": "2026-09-03",
+      "type": "HADITH",
+      "arabic": "إِنَّ اللَّهَ لَا يَنْظُرُ إِلَى أَجْسَامِكُمْ، وَلَا إِلَى صُوَرِكُمْ، وَلَكِنْ يَنْظُرُ إِلَى قُلُوبِكُمْ وَأَعْمَالِكُمْ",
+      "english": "Allah does not look at your bodies or appearances; He looks at your hearts and deeds.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260903",
+      "date": "2026-09-03",
+      "type": "SCHOLAR",
+      "arabic": "الْأَذَانُ شِعَارُ الْإِيمَانِ",
+      "english": "The adhan is a distinguishing sign of faith.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260904",
+      "date": "2026-09-04",
+      "type": "QURAN",
+      "arabic": "يَعْلَمُ مَا فِي السَّمَاوَاتِ وَالْأَرْضِ وَيَعْلَمُ مَا تُسِرُّونَ وَمَا تُعْلِنُونَ وَاللَّهُ عَلِيمٌ بِذَاتِ الصُّدُورِ",
+      "english": "He knows what is in the heavens and earth, what you hide and disclose, and what lies within hearts.",
+      "reference": "At-Taghabun 64:4",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260904",
+      "date": "2026-09-04",
+      "type": "HADITH",
+      "arabic": "لَا تَغْضَبْ",
+      "english": "Do not become angry.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260904",
+      "date": "2026-09-04",
+      "type": "SCHOLAR",
+      "arabic": "الْمُؤَذِّنُونَ أَطْوَلُ النَّاسِ أَعْنَاقًا يَوْمَ الْقِيَامَةِ",
+      "english": "The callers to prayer will have the most distinguished stature on the Day of Resurrection.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260905",
+      "date": "2026-09-05",
+      "type": "QURAN",
+      "arabic": "فَآمِنُوا بِاللَّهِ وَرَسُولِهِ وَالنُّورِ الَّذِي أَنْزَلْنَا وَاللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ",
+      "english": "Believe in Allah, His Messenger, and the light He sent down. Allah is fully aware of all that you do.",
+      "reference": "At-Taghabun 64:8",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260905",
+      "date": "2026-09-05",
+      "type": "HADITH",
+      "arabic": "اتَّقِ اللَّهَ حَيْثُمَا كُنْتَ، وَأَتْبِعِ السَّيِّئَةَ الْحَسَنَةَ تَمْحُهَا، وَخَالِقِ النَّاسَ بِخُلُقٍ حَسَنٍ",
+      "english": "Be mindful of Allah wherever you are; follow a bad deed with a good one, and treat people with good character.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260905",
+      "date": "2026-09-05",
+      "type": "SCHOLAR",
+      "arabic": "الْمُؤَذِّنُونَ أَطْوَلُ النَّاسِ أَعْنَاقًا يَوْمَ الْقِيَامَةِ",
+      "english": "The mu’adhdhins will be especially distinguished on the Day of Resurrection.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260906",
+      "date": "2026-09-06",
+      "type": "QURAN",
+      "arabic": "تَبَارَكَ الَّذِي بِيَدِهِ الْمُلْكُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+      "english": "Glorious is the One in whose hand is all dominion, and He is powerful over everything.",
+      "reference": "Al-Mulk 67:1",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260906",
+      "date": "2026-09-06",
+      "type": "HADITH",
+      "arabic": "الْمُؤْمِنُ الْقَوِيُّ خَيْرٌ وَأَحَبُّ إِلَى اللَّهِ مِنَ الْمُؤْمِنِ الضَّعِيفِ ... احْرِصْ عَلَى مَا يَنْفَعُكَ، وَاسْتَعِنْ بِاللَّهِ وَلَا تَعْجِزْ",
+      "english": "The strong believer is better and dearer to Allah. Pursue what benefits you, seek Allah’s help, and do not give up.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260906",
+      "date": "2026-09-06",
+      "type": "SCHOLAR",
+      "arabic": "إِنَّ الْمُؤَذِّنَ يُغْفَرُ لَهُ مَدَى صَوْتِهِ، وَيُصَدِّقُهُ كُلُّ رَطْبٍ وَيَابِسٍ سَمِعَهُ",
+      "english": "The mu’adhdhin is forgiven as far as his voice reaches, and every living and dry thing that hears him bears witness.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260907",
+      "date": "2026-09-07",
+      "type": "QURAN",
+      "arabic": "الَّذِي خَلَقَ الْمَوْتَ وَالْحَيَاةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا وَهُوَ الْعَزِيزُ الْغَفُورُ",
+      "english": "He created death and life to test which of you is best in deeds. He is the Mighty, the Most-Forgiving.",
+      "reference": "Al-Mulk 67:2",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260907",
+      "date": "2026-09-07",
+      "type": "HADITH",
+      "arabic": "لَا تَحْقِرَنَّ مِنَ الْمَعْرُوفِ شَيْئًا وَلَوْ أَنْ تَلْقَى أَخَاكَ بِوَجْهٍ طَلْقٍ",
+      "english": "Never regard a good deed as insignificant, even meeting your brother with a cheerful face.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260907",
+      "date": "2026-09-07",
+      "type": "SCHOLAR",
+      "arabic": "فَضْلُ الصَّلَاةِ فِي جَمَاعَةٍ خَمْسٌ وَعِشْرُونَ ضِعْفًا",
+      "english": "Prayer in congregation carries twenty-five times the merit.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260908",
+      "date": "2026-09-08",
+      "type": "QURAN",
+      "arabic": "إِنَّ الَّذِينَ يَخْشَوْنَ رَبَّهُمْ بِالْغَيْبِ لَهُمْ مَغْفِرَةٌ وَأَجْرٌ كَبِيرٌ",
+      "english": "Those who stand in awe of their Lord without seeing Him have forgiveness and a great reward.",
+      "reference": "Al-Mulk 67:12",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260908",
+      "date": "2026-09-08",
+      "type": "HADITH",
+      "arabic": "كُلُّ مَعْرُوفٍ صَدَقَةٌ",
+      "english": "Every recognized good deed is charity.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260908",
+      "date": "2026-09-08",
+      "type": "SCHOLAR",
+      "arabic": "صَلَاةٌ مَعَ الْإِمَامِ أَفْضَلُ مِنْ خَمْسٍ وَعِشْرِينَ صَلَاةً يُصَلِّيهَا وَحْدَهُ",
+      "english": "A prayer with the imam is better than twenty-five prayers offered alone.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260909",
+      "date": "2026-09-09",
+      "type": "QURAN",
+      "arabic": "أَلَا يَعْلَمُ مَنْ خَلَقَ وَهُوَ اللَّطِيفُ الْخَبِيرُ",
+      "english": "Would the One who created not know? He is the Most-Subtle, the All-Aware.",
+      "reference": "Al-Mulk 67:14",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260909",
+      "date": "2026-09-09",
+      "type": "HADITH",
+      "arabic": "مَنْ دَلَّ عَلَى خَيْرٍ فَلَهُ مِثْلُ أَجْرِ فَاعِلِهِ",
+      "english": "Whoever guides someone to good receives a reward like the one who performs it.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260909",
+      "date": "2026-09-09",
+      "type": "SCHOLAR",
+      "arabic": "فَضْلُ صَلَاةِ الْجَمِيعِ عَلَى صَلَاةِ الْوَاحِدِ خَمْسٌ وَعِشْرُونَ دَرَجَةً",
+      "english": "Congregational prayer is twenty-five degrees superior to praying alone.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260910",
+      "date": "2026-09-10",
+      "type": "QURAN",
+      "arabic": "هُوَ الَّذِي جَعَلَ لَكُمُ الْأَرْضَ ذَلُولًا فَامْشُوا فِي مَنَاكِبِهَا وَكُلُوا مِنْ رِزْقِهِ وَإِلَيْهِ النُّشُورُ",
+      "english": "He made the earth manageable for you; travel through it, eat from His provision, and to Him is the resurrection.",
+      "reference": "Al-Mulk 67:15",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260910",
+      "date": "2026-09-10",
+      "type": "HADITH",
+      "arabic": "الدِّينُ النَّصِيحَةُ",
+      "english": "Religion is sincere counsel and sincere concern.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260910",
+      "date": "2026-09-10",
+      "type": "SCHOLAR",
+      "arabic": "صَلَاةُ الرَّجُلِ فِي الْجَمِيعِ تَفْضُلُ عَلَى صَلَاةِ الرَّجُلِ وَحْدَهُ أَرْبَعًا وَعِشْرِينَ صَلَاةً",
+      "english": "A man’s prayer with the congregation exceeds his solitary prayer by twenty-four prayers.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260911",
+      "date": "2026-09-11",
+      "type": "QURAN",
+      "arabic": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَى",
+      "english": "Your Lord has not forsaken you, nor has He become displeased with you.",
+      "reference": "Ad-Duha 93:3",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260911",
+      "date": "2026-09-11",
+      "type": "HADITH",
+      "arabic": "الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ",
+      "english": "A Muslim is one from whose tongue and hand other Muslims are safe.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260911",
+      "date": "2026-09-11",
+      "type": "SCHOLAR",
+      "arabic": "فَضْلُ صَلَاةِ الْجَمَاعَةِ عَلَى صَلَاةِ الرَّجُلِ وَحْدَهُ بِضْعٌ وَعِشْرُونَ دَرَجَةً",
+      "english": "Congregational prayer exceeds individual prayer by more than twenty degrees.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260912",
+      "date": "2026-09-12",
+      "type": "QURAN",
+      "arabic": "وَلَلْآخِرَةُ خَيْرٌ لَكَ مِنَ الْأُولَى",
+      "english": "The Hereafter is far better for you than the present life.",
+      "reference": "Ad-Duha 93:4",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260912",
+      "date": "2026-09-12",
+      "type": "HADITH",
+      "arabic": "مَنْ لَا يَرْحَمْ لَا يُرْحَمْ",
+      "english": "Whoever does not show mercy will not be shown mercy.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260912",
+      "date": "2026-09-12",
+      "type": "SCHOLAR",
+      "arabic": "إِنَّ أَثْقَلَ الصَّلَوَاتِ عَلَى الْمُنَافِقِينَ صَلَاةُ الْعِشَاءِ وَالْفَجْرِ",
+      "english": "Among the hardest prayers for hypocrites are the night and dawn prayers.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260913",
+      "date": "2026-09-13",
+      "type": "QURAN",
+      "arabic": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَى",
+      "english": "Your Lord will surely give you until you are pleased.",
+      "reference": "Ad-Duha 93:5",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260913",
+      "date": "2026-09-13",
+      "type": "HADITH",
+      "arabic": "لَا يُؤْمِنُ أَحَدُكُمْ حَتَّى يُحِبَّ لِأَخِيهِ مَا يُحِبُّ لِنَفْسِهِ",
+      "english": "None of you truly believes until he loves for his brother what he loves for himself.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260913",
+      "date": "2026-09-13",
+      "type": "SCHOLAR",
+      "arabic": "أَفْضَلُ صَلَاةِ الرَّجُلِ فِي جَمَاعَةٍ عَلَى صَلَاةِ الرَّجُلِ وَحْدَهُ خَمْسٌ وَعِشْرُونَ دَرَجَةً",
+      "english": "A man’s prayer in congregation is twenty-five degrees better than his prayer alone.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260914",
+      "date": "2026-09-14",
+      "type": "QURAN",
+      "arabic": "فَأَمَّا الْيَتِيمَ فَلَا تَقْهَرْ",
+      "english": "So as for the orphan, do not oppress or mistreat him.",
+      "reference": "Ad-Duha 93:9",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260914",
+      "date": "2026-09-14",
+      "type": "HADITH",
+      "arabic": "مَنْ كَانَ فِي حَاجَةِ أَخِيهِ كَانَ اللَّهُ فِي حَاجَتِهِ",
+      "english": "Whoever attends to his brother’s need, Allah will attend to his need.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260914",
+      "date": "2026-09-14",
+      "type": "SCHOLAR",
+      "arabic": "لَوْ يَعْلَمُ النَّاسُ مَا فِي النِّدَاءِ وَالصَّفِّ الْأَوَّلِ ثُمَّ لَمْ يَجِدُوا إِلَّا أَنْ يَسْتَهِمُوا عَلَيْهِ لَاسْتَهَمُوا",
+      "english": "If people knew the merit of the adhan and the first row, they would draw lots for the opportunity.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260915",
+      "date": "2026-09-15",
+      "type": "QURAN",
+      "arabic": "وَأَمَّا السَّائِلَ فَلَا تَنْهَرْ",
+      "english": "And as for the one who asks, do not rebuke him.",
+      "reference": "Ad-Duha 93:10",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260915",
+      "date": "2026-09-15",
+      "type": "HADITH",
+      "arabic": "وَاللَّهُ فِي عَوْنِ الْعَبْدِ مَا كَانَ الْعَبْدُ فِي عَوْنِ أَخِيهِ",
+      "english": "Allah continues to help the servant as long as the servant helps his brother.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260915",
+      "date": "2026-09-15",
+      "type": "SCHOLAR",
+      "arabic": "مَنْ صَلَّى الْعِشَاءَ فِي جَمَاعَةٍ فَهُوَ كَقِيَامِ نِصْفِ لَيْلَةٍ، وَمَنْ صَلَّى الْعِشَاءَ وَالصُّبْحَ فِي جَمَاعَةٍ فَهُوَ كَقِيَامِ لَيْلَةٍ",
+      "english": "Praying ‘Isha in congregation is like standing half the night; adding Fajr is like standing the whole night.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260916",
+      "date": "2026-09-16",
+      "type": "QURAN",
+      "arabic": "فَإِنَّ مَعَ الْعُسْرِ يُسْرًا",
+      "english": "Surely, together with hardship there is ease.",
+      "reference": "Ash-Sharh 94:5",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260916",
+      "date": "2026-09-16",
+      "type": "HADITH",
+      "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+      "english": "Whoever believes in Allah and the Last Day should speak good or remain silent.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260916",
+      "date": "2026-09-16",
+      "type": "SCHOLAR",
+      "arabic": "لَأَنْ أُصَلِّيَ الصُّبْحَ فِي جَمَاعَةٍ أَحَبُّ إِلَيَّ مِنْ أَنْ أُصَلِّيَ لَيْلَةً حَتَّى أُصْبِحَ",
+      "english": "Praying Fajr in congregation was regarded as dearer than spending the whole night in voluntary prayer.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260917",
+      "date": "2026-09-17",
+      "type": "QURAN",
+      "arabic": "إِنَّ مَعَ الْعُسْرِ يُسْرًا",
+      "english": "Indeed, together with hardship there is ease.",
+      "reference": "Ash-Sharh 94:6",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260917",
+      "date": "2026-09-17",
+      "type": "HADITH",
+      "arabic": "إِنَّ مِنْ أَحَبِّكُمْ إِلَيَّ وَأَقْرَبِكُمْ مِنِّي مَجْلِسًا يَوْمَ الْقِيَامَةِ أَحَاسِنَكُمْ أَخْلَاقًا",
+      "english": "Those dearest and nearest to me on the Day of Resurrection will be those with the best character.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260917",
+      "date": "2026-09-17",
+      "type": "SCHOLAR",
+      "arabic": "شُهُودُهُمَا الْعِشَاءُ وَالصُّبْحُ أَفْضَلُ مِنْ قِيَامِ مَا بَيْنَهُمَا",
+      "english": "Attending ‘Isha and Fajr is better than standing in prayer throughout the time between them.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260918",
+      "date": "2026-09-18",
+      "type": "QURAN",
+      "arabic": "فَإِذَا فَرَغْتَ فَانْصَبْ",
+      "english": "When you become free, devote yourself earnestly to worship and effort.",
+      "reference": "Ash-Sharh 94:7",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260918",
+      "date": "2026-09-18",
+      "type": "HADITH",
+      "arabic": "إِنَّ اللَّهَ رَفِيقٌ يُحِبُّ الرِّفْقَ فِي الْأَمْرِ كُلِّهِ",
+      "english": "Allah is gentle and loves gentleness in every matter.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260918",
+      "date": "2026-09-18",
+      "type": "SCHOLAR",
+      "arabic": "لَأَنْ أُصَلِّيَ الْعِشَاءَ فِي جَمَاعَةٍ أَحَبُّ إِلَيَّ مِنْ أَنْ أُحْيِيَ اللَّيْلَ كُلَّهُ",
+      "english": "Praying ‘Isha in congregation was regarded as dearer than spending the entire night in worship.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260919",
+      "date": "2026-09-19",
+      "type": "QURAN",
+      "arabic": "وَإِلَى رَبِّكَ فَارْغَبْ",
+      "english": "And direct your longing and eagerness toward your Lord.",
+      "reference": "Ash-Sharh 94:8",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260919",
+      "date": "2026-09-19",
+      "type": "HADITH",
+      "arabic": "يَسِّرُوا وَلَا تُعَسِّرُوا، وَبَشِّرُوا وَلَا تُنَفِّرُوا",
+      "english": "Make things easy, not difficult; give glad tidings and do not drive people away.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260919",
+      "date": "2026-09-19",
+      "type": "SCHOLAR",
+      "arabic": "كَانَتْ تَعْدِلُ صَلَاةُ الصُّبْحِ فِي جَمَاعَةٍ بِقِيَامِ اللَّيْلِ كُلِّهِ، وَصَلَاةُ الْعِشَاءِ بِنِصْفِ اللَّيْلِ",
+      "english": "Fajr in congregation was considered equal to a whole night of prayer, and ‘Isha to half a night.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260920",
+      "date": "2026-09-20",
+      "type": "QURAN",
+      "arabic": "قُلْ هُوَ اللَّهُ أَحَدٌ",
+      "english": "Say: Allah is One.",
+      "reference": "Al-Ikhlas 112:1",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260920",
+      "date": "2026-09-20",
+      "type": "HADITH",
+      "arabic": "اقْرَؤُوا الْقُرْآنَ فَإِنَّهُ يَأْتِي يَوْمَ الْقِيَامَةِ شَفِيعًا لِأَصْحَابِهِ",
+      "english": "Recite the Qur’an, for it will come on the Day of Resurrection as an intercessor for its companions.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260920",
+      "date": "2026-09-20",
+      "type": "SCHOLAR",
+      "arabic": "شُهُودُ صَلَاةٍ مَكْتُوبَةٍ أَحَبُّ إِلَيَّ مِنْ قِيَامِ لَيْلَةٍ وَصِيَامِ يَوْمٍ",
+      "english": "Attending an obligatory prayer was regarded as dearer than a night of voluntary prayer and a day of fasting.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260921",
+      "date": "2026-09-21",
+      "type": "QURAN",
+      "arabic": "اللَّهُ الصَّمَدُ",
+      "english": "Allah is sought by all and is in need of none.",
+      "reference": "Al-Ikhlas 112:2",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260921",
+      "date": "2026-09-21",
+      "type": "HADITH",
+      "arabic": "خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ",
+      "english": "The best among you are those who learn the Qur’an and teach it.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260921",
+      "date": "2026-09-21",
+      "type": "SCHOLAR",
+      "arabic": "مَنْ صَلَّى الْمَغْرِبَ وَالْعِشَاءَ فِي جَمَاعَةٍ لَمْ تَفُتْهُ لَيْلَةُ الْقَدْرِ",
+      "english": "Whoever prays Maghrib and ‘Isha in congregation is described as not missing the blessing of Laylat al-Qadr.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260922",
+      "date": "2026-09-22",
+      "type": "QURAN",
+      "arabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+      "english": "He neither begets nor was He begotten.",
+      "reference": "Al-Ikhlas 112:3",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260922",
+      "date": "2026-09-22",
+      "type": "HADITH",
+      "arabic": "مَا اجْتَمَعَ قَوْمٌ فِي بَيْتٍ مِنْ بُيُوتِ اللَّهِ يَتْلُونَ كِتَابَ اللَّهِ وَيَتَدَارَسُونَهُ بَيْنَهُمْ إِلَّا نَزَلَتْ عَلَيْهِمُ السَّكِينَةُ",
+      "english": "When people gather in a house of Allah to recite and study His Book, tranquility descends upon them.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260922",
+      "date": "2026-09-22",
+      "type": "SCHOLAR",
+      "arabic": "مَنْ شَهِدَ الصَّلَوَاتِ الْخَمْسَ أَرْبَعِينَ لَيْلَةً فِي جَمَاعَةٍ يُدْرِكُ التَّكْبِيرَةَ الْأُولَى وَجَبَتْ لَهُ الْجَنَّةُ",
+      "english": "Whoever attends the five prayers in congregation for forty nights and catches the opening takbir is promised Paradise in this report.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260923",
+      "date": "2026-09-23",
+      "type": "QURAN",
+      "arabic": "وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+      "english": "No one and nothing is equal or comparable to Him.",
+      "reference": "Al-Ikhlas 112:4",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260923",
+      "date": "2026-09-23",
+      "type": "HADITH",
+      "arabic": "مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِي الدِّينِ",
+      "english": "When Allah intends good for someone, He grants that person understanding of the religion.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260923",
+      "date": "2026-09-23",
+      "type": "SCHOLAR",
+      "arabic": "مَنْ لَمْ تَفُتْهُ الرَّكْعَةُ الْأُولَى مِنَ الصَّلَاةِ أَرْبَعِينَ يَوْمًا كُتِبَتْ لَهُ بَرَاءَتَانِ: بَرَاءَةٌ مِنَ النَّارِ وَبَرَاءَةٌ مِنَ النِّفَاقِ",
+      "english": "Whoever consistently catches the first rak‘ah for forty days is described as receiving protection from the Fire and hypocrisy.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260924",
+      "date": "2026-09-24",
+      "type": "QURAN",
+      "arabic": "قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ",
+      "english": "Say: I seek refuge with the Lord of daybreak.",
+      "reference": "Al-Falaq 113:1",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260924",
+      "date": "2026-09-24",
+      "type": "HADITH",
+      "arabic": "مَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ",
+      "english": "Whoever follows a path seeking knowledge, Allah makes a path to Paradise easy for him.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260924",
+      "date": "2026-09-24",
+      "type": "SCHOLAR",
+      "arabic": "رَأَيْتُ النَّبِيَّ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ يَسْجُدُ فِي ص، وَلَيْسَتْ مِنْ عَزَائِمِ السُّجُودِ",
+      "english": "Ibn ‘Abbas reported seeing the Prophet prostrate in Surah Sad, though it is not among the obligatory prostrations.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260925",
+      "date": "2026-09-25",
+      "type": "QURAN",
+      "arabic": "مِنْ شَرِّ مَا خَلَقَ",
+      "english": "From the evil found among what He has created.",
+      "reference": "Al-Falaq 113:2",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260925",
+      "date": "2026-09-25",
+      "type": "HADITH",
+      "arabic": "مَنْ دَعَا إِلَى هُدًى كَانَ لَهُ مِنَ الْأَجْرِ مِثْلُ أُجُورِ مَنْ تَبِعَهُ",
+      "english": "Whoever calls others to guidance receives rewards like those who follow it, without reducing their rewards.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260925",
+      "date": "2026-09-25",
+      "type": "SCHOLAR",
+      "arabic": "أَنَّ رَسُولَ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ قَرَأَ ص عَلَى الْمِنْبَرِ فَنَزَلَ فَسَجَدَ",
+      "english": "The Prophet recited Surah Sad on the pulpit, then came down and prostrated.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260926",
+      "date": "2026-09-26",
+      "type": "QURAN",
+      "arabic": "وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+      "english": "And from the evil of the dark night when it settles in.",
+      "reference": "Al-Falaq 113:3",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260926",
+      "date": "2026-09-26",
+      "type": "HADITH",
+      "arabic": "إِذَا مَاتَ ابْنُ آدَمَ انْقَطَعَ عَمَلُهُ إِلَّا مِنْ ثَلَاثٍ: صَدَقَةٍ جَارِيَةٍ، أَوْ عِلْمٍ يُنْتَفَعُ بِهِ، أَوْ وَلَدٍ صَالِحٍ يَدْعُو لَهُ",
+      "english": "When a person dies, deeds end except for ongoing charity, beneficial knowledge, or a righteous child who prays for them.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260926",
+      "date": "2026-09-26",
+      "type": "SCHOLAR",
+      "arabic": "رَأَيْتُ ابْنَ عَبَّاسٍ سَجَدَ فِي ص",
+      "english": "A report states that Ibn ‘Abbas prostrated on reciting Surah Sad.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260927",
+      "date": "2026-09-27",
+      "type": "QURAN",
+      "arabic": "وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ",
+      "english": "And from the evil of those who blow upon knots.",
+      "reference": "Al-Falaq 113:4",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260927",
+      "date": "2026-09-27",
+      "type": "HADITH",
+      "arabic": "أَقْرَبُ مَا يَكُونُ الْعَبْدُ مِنْ رَبِّهِ وَهُوَ سَاجِدٌ، فَأَكْثِرُوا الدُّعَاءَ",
+      "english": "A servant is nearest to his Lord while prostrating, so increase your supplication then.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260927",
+      "date": "2026-09-27",
+      "type": "SCHOLAR",
+      "arabic": "سَجَدَهَا دَاوُدُ تَوْبَةً، وَسَجَدْنَاهَا شُكْرًا",
+      "english": "Dawud prostrated there in repentance, while this Ummah prostrates there in gratitude.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260928",
+      "date": "2026-09-28",
+      "type": "QURAN",
+      "arabic": "قُلْ أَعُوذُ بِرَبِّ النَّاسِ",
+      "english": "Say: I seek refuge with the Lord of mankind.",
+      "reference": "An-Nas 114:1",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260928",
+      "date": "2026-09-28",
+      "type": "HADITH",
+      "arabic": "الدُّعَاءُ هُوَ الْعِبَادَةُ",
+      "english": "Supplication is worship.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260928",
+      "date": "2026-09-28",
+      "type": "SCHOLAR",
+      "arabic": "أَنَّ أَبَا هُرَيْرَةَ كَانَ يَسْجُدُ فِي إِذَا السَّمَاءُ انْشَقَّتْ",
+      "english": "Abu Hurairah is reported to have prostrated when reciting Surah Al-Inshiqaq.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260929",
+      "date": "2026-09-29",
+      "type": "QURAN",
+      "arabic": "مَلِكِ النَّاسِ",
+      "english": "The King of mankind.",
+      "reference": "An-Nas 114:2",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260929",
+      "date": "2026-09-29",
+      "type": "HADITH",
+      "arabic": "مَنْ كَانَ يُؤْمِنُ بِاللَّهِ وَالْيَوْمِ الْآخِرِ فَلْيَقُلْ خَيْرًا أَوْ لِيَصْمُتْ",
+      "english": "Whoever believes in Allah and the Last Day should say what is good or remain silent.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260929",
+      "date": "2026-09-29",
+      "type": "SCHOLAR",
+      "arabic": "كَانَ إِذَا قَرَأَ بِالنَّجْمِ سَجَدَ",
+      "english": "Ibn ‘Abbas is reported to have prostrated when reciting Surah An-Najm.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
+      "detail": ""
+    },
+    {
+      "id": "quran-20260930",
+      "date": "2026-09-30",
+      "type": "QURAN",
+      "arabic": "إِلَهِ النَّاسِ",
+      "english": "The God of mankind.",
+      "reference": "An-Nas 114:3",
+      "scholar": "",
+      "detail": "Source: T. Usmani translation on Quran.com; English"
+    },
+    {
+      "id": "hadith-20260930",
+      "date": "2026-09-30",
+      "type": "HADITH",
+      "arabic": "بِحَسْبِ امْرِئٍ مِنَ الشَّرِّ أَنْ يَحْقِرَ أَخَاهُ الْمُسْلِمَ",
+      "english": "It is enough evil for a person to look down upon his Muslim brother.",
+      "reference": "Riyad as-Salihin",
+      "scholar": "",
+      "detail": ""
+    },
+    {
+      "id": "scholar-20260930",
+      "date": "2026-09-30",
+      "type": "SCHOLAR",
+      "arabic": "قَرَأْتُهَا عِنْدَ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ فَلَمْ يَسْجُدْ",
+      "english": "Zayd ibn Thabit reported reciting it before the Prophet and that he did not prostrate on that occasion.",
+      "reference": "Musannaf Abd al-Razzaq",
+      "scholar": "Musannaf Abd al-Razzaq",
       "detail": ""
     }
   ]

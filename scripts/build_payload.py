@@ -63,6 +63,7 @@ def content_rows(path: Path) -> list[dict[str, str]]:
             "english": row["english"].strip(),
             "reference": row["reference"].strip(),
             "scholar": row.get("scholar", "").strip(),
+            "detail": row.get("detail", "").strip(),
         })
     return result
 

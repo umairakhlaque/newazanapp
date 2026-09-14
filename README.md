@@ -4,11 +4,14 @@ Offline-first Android TV prayer and Iqamah display for SIEA.
 
 ## Production web display and administration
 
-GitHub Pages publishes the production TV display from `web/`. It follows the prayer timetable automatically, can be installed as a full-screen PWA, and retains the last valid timetable for offline operation. Add `?demo=1` to the display URL to reveal preview controls for the Main, Adhan, Iqamah, Ayah, Hadith, and scholar screens. The `/admin.html` page validates an official timetable CSV locally, previews up to 31 days, and then sends the administrator to GitHub to publish the approved `timetable.csv`. GitHub remains the authenticated publishing and audit layer; no access token is stored in the browser.
+GitHub Pages publishes the production TV display from `web/`. It follows the prayer timetable automatically, can be installed as a full-screen PWA, and retains the last valid timetable for offline operation. Add `?demo=1` to the display URL to reveal preview controls for the Main, Adhan, Iqamah, Ayah, Hadith, and scholar screens. The `/admin.html` page accepts XLS, XLSX, or CSV files for prayer times and monthly Islamic content, supports manual daily editing, validates the data, and sends the administrator to GitHub to publish the approved CSV. GitHub remains the authenticated publishing and audit layer; no access token is stored in the browser.
+
+The current admin sign-in is intentionally temporary client-side protection for testing. Because this is a public repository and a static GitHub Pages site, it must not be treated as secure access control. Replace it with Cloudflare Access before wider operational use.
 
 ## What the MVP does
 
 - Permanent SIEA screen with an analogue clock and five prayer rows.
+- Large Gregorian and Umm al-Qura Hijri dates beneath the clock, with a moon phase matched to the Hijri day.
 - Separate Adhan and Iqamah columns.
 - One-minute full-screen Adhan notification at the exact Adhan time.
 - Full-screen two-minute Iqamah countdown with a pulsing mobile-silencing reminder.
@@ -43,7 +46,7 @@ Time format must be 24-hour `HH:mm`. Date format must be `YYYY-MM-DD`.
 
 ## Update Ayat, Hadith and quotations
 
-Edit `data/content.csv`. Supported types are `QURAN`, `HADITH`, and `SCHOLAR`.
+Open `/admin.html`, choose the month, and either edit each day or import the downloadable XLSX/CSV monthly template. Each day contains one Quran entry, one Hadith, and one word of wisdom. Validate the entire month, download the generated `content.csv`, and publish it through GitHub. Supported application types are `QURAN`, `HADITH`, and `SCHOLAR`.
 
 - Set `date` to a specific `YYYY-MM-DD` date for one day.
 - Set `date` to `*` to keep an item in the general rotation.

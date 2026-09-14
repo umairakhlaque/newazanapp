@@ -67,7 +67,11 @@ button, a { font: inherit; }
 .hand.second { width: max(2px, .14vw); height: 40%; background: var(--emerald); }
 .clock-pin { position: absolute; width: clamp(13px, 1.25vw, 24px); aspect-ratio: 1; left: 50%; top: 50%; transform: translate(-50%,-50%); border: .22vw solid var(--ivory); border-radius: 50%; background: var(--gold); }
 .digital-clock { margin-top: 1.2vh; padding: .3vh 1.7vw; border: 2px solid var(--gold); border-radius: 999px; background: rgba(2,15,25,.35); font-size: clamp(23px, 2.9vw, 54px); line-height: 1.12; font-weight: 850; font-variant-numeric: tabular-nums; }
-.current-date { color: var(--muted); margin-top: .7vh; font-size: clamp(9px, 1vw, 18px); letter-spacing: .04em; }
+.date-stack { margin-top: .8vh; display: flex; flex-direction: column; align-items: center; gap: .35vh; }
+.current-date, .hijri-date { font-size: clamp(15px, 1.42vw, 28px); line-height: 1.15; letter-spacing: .025em; font-weight: 650; white-space: nowrap; }
+.current-date { color: var(--ivory); }
+.hijri-date-row { display: flex; align-items: center; justify-content: center; gap: .55vw; color: var(--gold-soft); }
+.hijri-moon { width: 1.8em; height: 1.8em; display: grid; place-items: center; border-radius: 50%; font-size: clamp(21px, 2vw, 39px); filter: drop-shadow(0 0 .45vw rgba(216,172,74,.45)); }
 
 .prayer-panel { width: 60%; border: 1px solid rgba(216,172,74,.72); border-radius: 1vw; overflow: hidden; background: rgba(2,15,25,.18); box-shadow: 0 1.2vw 4vw rgba(0,0,0,.2); }
 .table-head, .prayer-row { display: grid; grid-template-columns: 1.34fr 1fr 1fr; align-items: center; }
@@ -111,11 +115,13 @@ button, a { font: inherit; }
 .mobile-reminder p { color: var(--muted); font-size: clamp(9px,.8vw,15px); line-height: 1.5; }
 @keyframes pulse { from { transform: scale(.87); opacity: .72; } to { transform: scale(1); opacity: 1; } }
 
-.content-screen { flex-direction: column; justify-content: center; text-align: center; padding: 3vh 6vw 5vh; gap: 2.3vh; }
+.content-screen { flex-direction: column; justify-content: center; text-align: center; padding: 3vh 6vw 5vh; gap: 1.8vh; }
 .content-kicker { color: var(--gold); letter-spacing: .2em; font-size: clamp(21px,2.7vw,52px); font-weight: 800; }
 .content-rule { width: min(24vw,430px); height: 1px; background: linear-gradient(90deg,transparent,var(--gold),transparent); }
 .arabic { direction: rtl; max-width: 92%; font-family: "Noto Naskh Arabic", "Amiri", Georgia, serif; font-size: clamp(38px,4.8vw,90px); line-height: 1.58; font-weight: 600; text-shadow: 0 .3vw 1vw rgba(0,0,0,.28); }
 .translation { max-width: 86%; font-family: Georgia,serif; font-size: clamp(20px,2.25vw,43px); line-height: 1.42; }
+.content-detail { max-width: 82%; color: var(--muted); font-size: clamp(13px,1.25vw,23px); line-height: 1.4; }
+.content-detail[hidden] { display: none; }
 .reference { color: var(--gold-soft); border: 1px solid var(--gold); border-radius: 999px; padding: .55vh 2vw; font-size: clamp(12px,1.1vw,21px); }
 
 .display-footer { position: absolute; z-index: 3; bottom: 1.1vh; left: 3.2vw; right: 3.2vw; display: flex; justify-content: space-between; color: rgba(170,192,203,.66); font-size: clamp(7px,.65vw,12px); letter-spacing: .08em; text-transform: uppercase; }
@@ -133,10 +139,25 @@ button, a { font: inherit; }
 
 /* Administration */
 .admin-body { min-height: 100vh; background: linear-gradient(145deg,#031724,var(--navy)); }
+.login-shell { min-height: 100vh; display: grid; place-items: center; padding: 28px; }
+.login-card { width: min(460px,94vw); padding: 38px; border: 1px solid rgba(216,172,74,.42); border-radius: 20px; background: rgba(8,42,61,.94); box-shadow: 0 24px 75px rgba(0,0,0,.35); }
+.login-card h1 { margin: 8px 0 10px; font-size: clamp(30px,4vw,45px); }
+.login-card > p, .back-link { color: var(--muted); }
+.login-form, .content-form-group, .month-controls label { display: flex; flex-direction: column; gap: 7px; }
+.login-form { gap: 18px; margin: 26px 0 18px; }
+.login-form label, .content-form-group label, .month-controls label { color: var(--gold-soft); font-size: 13px; font-weight: 750; letter-spacing: .03em; }
+.login-form input, .content-form-group input, .content-form-group textarea, .month-controls input, .day-navigation select { width: 100%; border: 1px solid rgba(216,172,74,.35); border-radius: 9px; background: rgba(2,15,25,.72); color: var(--ivory); padding: 11px 12px; outline: none; }
+.login-form input:focus, .content-form-group input:focus, .content-form-group textarea:focus, .month-controls input:focus, .day-navigation select:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(216,172,74,.12); }
+.back-link { display: inline-block; margin-top: 18px; }
 .admin-shell { width: min(1180px,94vw); margin: auto; padding: 42px 0 70px; }
 .admin-header { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 30px; }
 .admin-header h1 { margin: 4px 0; font-size: clamp(28px,4vw,48px); }
+.admin-actions, .button-row, .month-controls, .day-navigation { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .eyebrow { color: var(--gold); letter-spacing: .25em; font-weight: 800; }
+.security-notice { margin-bottom: 38px; padding: 12px 16px; border-left: 4px solid var(--gold); background: rgba(216,172,74,.11); color: var(--gold-soft); font-size: 13px; line-height: 1.5; }
+.admin-section-heading { margin: 36px 0 14px; }
+.admin-section-heading h2 { margin: 6px 0 0; font-size: clamp(25px,3vw,38px); }
+.content-heading-admin { margin-top: 64px; }
 .admin-card { display: flex; gap: 25px; align-items: flex-start; background: rgba(8,42,61,.85); border: 1px solid rgba(216,172,74,.34); border-radius: 18px; padding: 28px; margin: 18px 0; box-shadow: 0 18px 55px rgba(0,0,0,.2); }
 .admin-card h2 { margin: 0 0 8px; }
 .admin-card p { color: var(--muted); line-height: 1.55; }
@@ -157,10 +178,28 @@ button, a { font: inherit; }
 .primary-button, .secondary-button { display: inline-block; border: 1px solid var(--gold); background: transparent; color: var(--ivory); border-radius: 8px; padding: 9px 15px; text-decoration: none; cursor: pointer; font-weight: 700; }
 .primary-button { background: var(--gold); color: var(--navy); }
 .primary-button.disabled { opacity: .42; pointer-events: none; }
+.secondary-button.disabled, button:disabled { opacity: .42; pointer-events: none; }
 .secondary-button:hover { background: rgba(216,172,74,.15); }
 .small-note { font-size: 13px; }
 .compact-card { justify-content: space-between; align-items: center; }
+.button-row { margin-top: 20px; }
+.month-controls { align-items: flex-end; margin: 18px 0 8px; }
+.month-controls label { min-width: 210px; }
+.editor-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
+.editor-header h2 { margin-bottom: 4px; }
+.editor-header p { margin-top: 0; }
+.day-navigation select { min-width: 190px; }
+.daily-editor { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; margin-top: 22px; }
+.content-form-group { padding: 20px; border: 1px solid rgba(255,255,255,.12); border-radius: 14px; background: rgba(2,15,25,.32); }
+.content-form-group h3 { margin: 0 0 5px; color: var(--gold-soft); font-size: 21px; }
+.content-form-group textarea { resize: vertical; min-height: 92px; font-family: inherit; line-height: 1.5; }
+.content-form-group textarea[dir="rtl"] { font-family: "Noto Naskh Arabic","Amiri",serif; font-size: 20px; }
+.two-column-fields { display: grid; grid-template-columns: 1fr; gap: 12px; }
+.quran-group { border-top: 3px solid var(--gold); }
+.hadith-group { border-top: 3px solid var(--emerald); }
+.wisdom-group { border-top: 3px solid #8ea7d8; }
 code { color: #7ff3bd; }
+[hidden] { display: none !important; }
 
 @media (max-aspect-ratio: 4/3) {
   .brand { height: 9%; }
@@ -175,6 +214,8 @@ code { color: #7ff3bd; }
   .admin-card { padding: 20px; }
   .step-number { display: none; }
   .wide-content { width: 100%; }
+  .daily-editor { grid-template-columns: 1fr; }
+  .editor-header { flex-direction: column; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -1,4 +1,4 @@
-const CACHE_NAME = "siea-prayer-display-v2";
+const CACHE_NAME = "siea-prayer-display-v3";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -31,6 +31,15 @@ self.addEventListener("fetch", (event) => {
       caches.open(CACHE_NAME).then((cache) => cache.put("./data/payload.json", copy));
       return response;
     }).catch(() => caches.match("./data/payload.json")));
+    return;
+  }
+  const isAppFile = event.request.mode === "navigate" || /\.(?:html|js|css|webmanifest)$/.test(url.pathname);
+  if (url.origin === self.location.origin && isAppFile) {
+    event.respondWith(fetch(event.request).then((response) => {
+      const copy = response.clone();
+      caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+      return response;
+    }).catch(async () => (await caches.match(event.request)) || caches.match("./index.html")));
     return;
   }
   event.respondWith(caches.match(event.request).then((cached) => cached || fetch(event.request)));

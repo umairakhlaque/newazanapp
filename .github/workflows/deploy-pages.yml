@@ -32,6 +32,11 @@ jobs:
       - uses: actions/checkout@v4
       - name: Test web timing engine
         run: node --test web/prayer-engine.test.js
+      - name: Check browser scripts
+        run: |
+          node --check web/app.js
+          node --check web/admin.js
+          node --check web/sw.js
       - name: Prepare site
         run: |
           mkdir -p _site/data

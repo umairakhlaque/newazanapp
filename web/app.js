@@ -52,7 +52,29 @@ function updateClock() {
     month: "long",
     year: "numeric",
   }).format(now);
+  const hijriFormatter = new Intl.DateTimeFormat("en-GB-u-ca-islamic-umalqura", {
+    timeZone: LONDON_ZONE,
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
+  const hijriParts = Object.fromEntries(hijriFormatter.formatToParts(now).map((part) => [part.type, part.value]));
+  const hijriDay = Number(hijriParts.day);
+  document.getElementById("hijri-date").textContent = hijriFormatter.format(now);
+  document.getElementById("hijri-moon").textContent = moonForHijriDay(hijriDay);
   return parts;
+}
+
+function moonForHijriDay(day) {
+  if (day <= 2) return "🌑";
+  if (day <= 6) return "🌒";
+  if (day <= 9) return "🌓";
+  if (day <= 13) return "🌔";
+  if (day <= 16) return "🌕";
+  if (day <= 20) return "🌖";
+  if (day <= 23) return "🌗";
+  if (day <= 27) return "🌘";
+  return "🌑";
 }
 
 function showScreen(name) {
@@ -119,6 +141,9 @@ function renderState(state) {
     document.getElementById("content-title").textContent = contentHeading(item);
     document.getElementById("content-arabic").textContent = item.arabic;
     document.getElementById("content-english").textContent = item.english;
+    const detail = document.getElementById("content-detail");
+    detail.textContent = item.detail || "";
+    detail.hidden = !item.detail;
     document.getElementById("content-reference").textContent = item.scholar
       ? `${item.reference} · ${item.scholar}`
       : item.reference;

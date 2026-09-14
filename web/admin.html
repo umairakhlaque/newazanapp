@@ -3,25 +3,49 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
   <title>SIEA Display Administration</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="admin-body">
-  <main class="admin-shell">
+  <main id="login-panel" class="login-shell">
+    <section class="login-card">
+      <span class="eyebrow">SIEA</span>
+      <h1>Display Administration</h1>
+      <p>Sign in to manage prayer timings and monthly Islamic content.</p>
+      <form id="login-form" class="login-form">
+        <label>Username<input id="admin-username" type="text" autocomplete="username" required></label>
+        <label>Password<input id="admin-password" type="password" autocomplete="current-password" required></label>
+        <button class="primary-button" type="submit">Sign in</button>
+      </form>
+      <div id="login-message" class="status neutral">Temporary local administration login.</div>
+      <a class="back-link" href="index.html">Return to live display</a>
+    </section>
+  </main>
+
+  <main id="admin-panel" class="admin-shell" hidden>
     <header class="admin-header">
       <div><span class="eyebrow">SIEA</span><h1>Prayer Display Administration</h1></div>
-      <a class="secondary-button" href="index.html">Open live display</a>
+      <div class="admin-actions"><a class="secondary-button" href="index.html">Open live display</a><button id="logout-button" class="secondary-button" type="button">Sign out</button></div>
     </header>
+
+    <div class="security-notice">Temporary browser-based password protection. Move authentication to Cloudflare before giving access to additional administrators.</div>
+
+    <section class="admin-section-heading">
+      <span class="eyebrow">PRAYER TIMES</span>
+      <h2>Monthly timetable</h2>
+    </section>
 
     <section class="admin-card">
       <div class="step-number">1</div>
-      <div>
-        <h2>Select the official timetable</h2>
-        <p>Upload the CSV exported from Excel. Nothing is sent from your browser until you choose to publish it on GitHub.</p>
+      <div class="wide-content">
+        <h2>Upload the official timetable</h2>
+        <p>Select an Excel or CSV file containing one row per date and Adhan/Iqamah times for all five prayers.</p>
         <label class="upload-box">
-          <input id="timetable-file" type="file" accept=".csv,text/csv">
-          <strong>Choose timetable CSV</strong>
-          <span>Required columns: date and Adhan/Iqamah for five prayers</span>
+          <input id="timetable-file" type="file" accept=".xlsx,.xls,.csv,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel">
+          <strong>Choose timetable XLS, XLSX or CSV</strong>
+          <span>Required: date and Adhan/Iqamah columns for five prayers</span>
         </label>
         <div id="validation-message" class="status neutral">Waiting for a timetable file.</div>
       </div>
@@ -38,27 +62,103 @@
             <tbody id="preview-body"><tr><td colspan="6">No timetable loaded</td></tr></tbody>
           </table>
         </div>
+        <div class="button-row">
+          <button id="download-timetable" class="primary-button disabled" type="button" disabled>Download timetable.csv</button>
+          <a id="publish-link" class="secondary-button disabled" href="https://github.com/umairakhlaque/newazanapp/upload/main/data" target="_blank" rel="noopener">Publish through GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="admin-section-heading content-heading-admin">
+      <span class="eyebrow">DAILY REMINDERS</span>
+      <h2>Monthly Qur’an, Hadith and Words of Wisdom</h2>
+    </section>
+
+    <section class="admin-card">
+      <div class="step-number">1</div>
+      <div class="wide-content">
+        <h2>Select the month</h2>
+        <div class="month-controls">
+          <label>Content month<input id="content-month" type="month" required></label>
+          <button id="create-month" class="primary-button" type="button">Create month</button>
+          <button id="download-content-csv-template" class="secondary-button" type="button">CSV template</button>
+          <button id="download-content-xlsx-template" class="secondary-button" type="button">Excel template</button>
+        </div>
+        <p class="small-note">The template contains one row for each date. Complete Qur’an, Hadith and Wisdom fields for every day.</p>
       </div>
     </section>
 
     <section class="admin-card">
-      <div class="step-number">3</div>
-      <div>
-        <h2>Publish the approved timetable</h2>
-        <p>After validation, publish the CSV to the repository. GitHub automatically generates the application data and every connected Android box receives it on its next synchronization.</p>
-        <a id="publish-link" class="primary-button disabled" href="https://github.com/umairakhlaque/newazanapp/upload/main/data" target="_blank" rel="noopener">Publish through GitHub</a>
-        <p class="small-note">Upload the validated file using the exact name <code>timetable.csv</code>. GitHub sign-in provides the security and audit history.</p>
+      <div class="step-number">2</div>
+      <div class="wide-content">
+        <h2>Import a completed monthly file</h2>
+        <label class="upload-box">
+          <input id="content-file" type="file" accept=".xlsx,.xls,.csv,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel">
+          <strong>Choose monthly content XLS, XLSX or CSV</strong>
+          <span>The selected month is used if the file contains Day 1, Day 2, and similar values.</span>
+        </label>
+        <div id="content-import-message" class="status neutral">You may import a file or enter the content manually below.</div>
       </div>
     </section>
 
-    <section class="admin-card compact-card">
-      <div>
-        <h2>Islamic content</h2>
-        <p>Ayat, Hadith and verified scholar statements are maintained separately in <code>data/content.csv</code>.</p>
+    <section class="admin-card content-editor-card">
+      <div class="step-number">3</div>
+      <div class="wide-content">
+        <div class="editor-header">
+          <div><h2>Enter or review daily content</h2><p id="content-progress">Select a month to begin.</p></div>
+          <div class="day-navigation">
+            <button id="previous-day" class="secondary-button" type="button">Previous</button>
+            <select id="content-day" aria-label="Content date"></select>
+            <button id="next-day" class="secondary-button" type="button">Next</button>
+          </div>
+        </div>
+
+        <div id="daily-editor" class="daily-editor" hidden>
+          <section class="content-form-group quran-group">
+            <h3>Qur’an verse</h3>
+            <label>Arabic text<textarea data-field="quran_arabic" dir="rtl" rows="3"></textarea></label>
+            <label>English translation<textarea data-field="quran_translation" rows="3"></textarea></label>
+            <div class="two-column-fields">
+              <label>Verse reference<input data-field="quran_verse" type="text" placeholder="Surah Al-Baqarah 2:153"></label>
+              <label>Verse detail<input data-field="quran_detail" type="text" placeholder="Short context or theme"></label>
+            </div>
+          </section>
+
+          <section class="content-form-group hadith-group">
+            <h3>Hadith</h3>
+            <label>Arabic text<textarea data-field="hadith_arabic" dir="rtl" rows="3"></textarea></label>
+            <label>English translation<textarea data-field="hadith_english" rows="3"></textarea></label>
+            <label>Hadith reference<input data-field="hadith_reference" type="text" placeholder="Riyad as-Salihin, Hadith 1"></label>
+          </section>
+
+          <section class="content-form-group wisdom-group">
+            <h3>Words of Wisdom</h3>
+            <label>Arabic words<textarea data-field="wisdom_arabic" dir="rtl" rows="3"></textarea></label>
+            <label>English translation<textarea data-field="wisdom_english" rows="3"></textarea></label>
+            <label>Reference or scholar<input data-field="wisdom_reference" type="text" placeholder="Imam Malik"></label>
+          </section>
+        </div>
+        <div id="day-status" class="status neutral">No day selected.</div>
       </div>
-      <a class="secondary-button" href="https://github.com/umairakhlaque/newazanapp/edit/main/data/content.csv" target="_blank" rel="noopener">Edit daily content</a>
+    </section>
+
+    <section class="admin-card">
+      <div class="step-number">4</div>
+      <div class="wide-content">
+        <h2>Validate and publish monthly content</h2>
+        <p>Validation requires Arabic text, English translation and a reference for all three content types on every day of the selected month.</p>
+        <div class="button-row">
+          <button id="validate-content" class="secondary-button" type="button">Validate month</button>
+          <button id="download-content" class="primary-button disabled" type="button" disabled>Download content.csv</button>
+          <a id="publish-content" class="secondary-button disabled" href="https://github.com/umairakhlaque/newazanapp/upload/main/data" target="_blank" rel="noopener">Publish through GitHub</a>
+        </div>
+        <div id="content-validation-message" class="status neutral">Complete or import the month, then validate it.</div>
+        <p class="small-note">Upload the downloaded file to GitHub using the exact filename <code>content.csv</code>.</p>
+      </div>
     </section>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
   <script src="admin.js"></script>
 </body>
 </html>

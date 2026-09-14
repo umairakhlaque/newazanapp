@@ -52,15 +52,22 @@ function updateClock() {
     month: "long",
     year: "numeric",
   }).format(now);
-  const hijriFormatter = new Intl.DateTimeFormat("en-GB-u-ca-islamic-umalqura", {
+  const hijriFormatter = new Intl.DateTimeFormat("en-u-ca-islamic-umalqura-nu-latn", {
     timeZone: LONDON_ZONE,
     day: "numeric",
-    month: "long",
+    month: "numeric",
     year: "numeric",
   });
   const hijriParts = Object.fromEntries(hijriFormatter.formatToParts(now).map((part) => [part.type, part.value]));
   const hijriDay = Number(hijriParts.day);
-  document.getElementById("hijri-date").textContent = hijriFormatter.format(now);
+  const hijriMonth = Number(hijriParts.month);
+  const hijriMonthNames = [
+    "Muharram", "Safar", "Rabi al-Awwal", "Rabi al-Thani",
+    "Jumada al-Awwal", "Jumada al-Thani", "Rajab", "Sha'ban",
+    "Ramadan", "Shawwal", "Dhu al-Qi'dah", "Dhu al-Hijjah",
+  ];
+  document.getElementById("hijri-date").textContent =
+    `${hijriDay} ${hijriMonthNames[hijriMonth - 1] || "Islamic month"} ${hijriParts.year} AH`;
   document.getElementById("hijri-moon").textContent = moonForHijriDay(hijriDay);
   return parts;
 }
